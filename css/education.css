@@ -1,0 +1,58 @@
+.education {
+  border-radius: 40px;
+  max-width: 1170px;
+  background-color: var(--header-bg);
+  margin: 0 auto;
+  margin-top: 113px;
+  padding: 48px 0 79px;
+}
+.education__title {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+}
+.education .list {
+  margin-top: 71px;
+  padding: 0;
+}
+.education .list__column {
+  padding: 0 30px;
+}
+.education .list__column:not(:last-child) {
+  border-right: 2px solid var(--dark-red);
+}
+.education .list__title {
+  font-weight: 700;
+  font-size: 27px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 148%;
+  margin: 0;
+}
+.education .list__icon {
+  margin-top: 17px;
+  margin-bottom: 37px;
+}
+.education .list__icon--1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.education .list__descr {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+  text-align: center;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+  line-height: 150%;
+  margin: 0;
+}
+.education .list__descr--2 {
+  margin-top: 50px;
+}
+.education .list__descr--3 {
+  margin-top: 50px;
+}

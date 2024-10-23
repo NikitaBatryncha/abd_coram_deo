@@ -1,0 +1,111 @@
+@import "mixins.scss";
+
+.structure {
+  @include grid_bg(68px);
+  padding: 72px 0 105px;
+  margin-top: 108px;
+
+  &__title {
+    @include title(700, 35px)
+  }
+
+  &__descr {
+    margin-top: 32px;
+    @include text (300, 24px);
+  }
+
+  .grid {
+    margin-top: 53px;
+    padding-left: 0;
+    gap: 56px;
+    row-gap: 74px;
+    justify-content: center;
+
+    &__item {
+      max-width: 524px;
+      padding-bottom: 119px;
+
+      &-container {
+        min-height: 495px;
+        height: 100%;
+        padding: 35px 27px 20px;
+        position: relative;
+        background-color: var(--white);
+      }
+
+      &--1 {
+        .grid__title {
+          @include grid_title(var(--light-green));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd0-icon.svg");
+        }
+      }
+
+      &--2 {
+        .grid__title {
+          @include grid_title(var(--dark-blue));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd1a-icon.svg");
+        }
+      }
+
+      &--3 {
+        .grid__title {
+          @include grid_title(var(--purple));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd1b-icon.png");
+        }
+      }
+
+      &--4 {
+        .grid__title {
+          @include grid_title(var(--dark--green));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd1k-icon.svg");
+        }
+      }
+
+      &--5 {
+        .grid__title {
+          @include grid_title(var(--dark-yellow));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd2-icon.svg");
+        }
+      }
+
+      &--6 {
+        .grid__title {
+          @include grid_title(var(--red));
+        }
+
+        .grid__item-container::after {
+          @include grid_item_after("../public/img/skd3-icon.svg");
+        }
+      }
+    }
+
+    &__descr {
+      margin-top: 14px;
+      @include text(400, 24px);
+      line-height: 167%;
+      letter-spacing: 0.02em;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+
+  }
+
+
+}

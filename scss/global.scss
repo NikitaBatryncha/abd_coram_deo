@@ -1,0 +1,48 @@
+@import "mixins.scss";
+:root {
+  --black: #000;
+  --background: #fff;
+  --white: #fff;
+  --header-bg: #f5eadd;
+  --dark-red: #ac0a08;
+  --light-green: #86dc57;
+  --dark-blue: #28469a;
+  --purple: #a128bb;
+  --dark--green: #067060;
+  --dark-yellow: #ffa42f;
+  --red: #bd0303;
+  --dark-gray: #2d2d2d;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100%;
+}
+
+body {
+  color: var(--black);
+  background: var(--background);
+  font-family: "Gilroy", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1193px;
+}

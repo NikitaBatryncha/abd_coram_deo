@@ -1,0 +1,32 @@
+.practical {
+  margin-top: 91px;
+}
+.practical__container {
+  gap: 32px;
+}
+.practical__title {
+  max-width: 1103px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--black);
+  text-align: center;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+  line-height: 167%;
+  text-align: center;
+  margin-bottom: 0;
+}
+.practical__img {
+  width: 113px;
+}
+.practical__descr {
+  font-weight: 300;
+  font-size: 24px;
+  color: var(--black);
+  text-align: center;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+  line-height: 167%;
+  text-align: center;
+  margin-bottom: 0;
+}

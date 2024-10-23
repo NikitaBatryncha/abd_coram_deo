@@ -1,0 +1,26 @@
+@import "mixins.scss";
+
+.resources {
+  margin-top: 52px;
+  padding: 100px 0;
+
+  &__title {
+    @include title(700, 35px)
+  }
+
+  &__descr {
+    margin-top: 28px;
+    @include text(400, 24px)
+  }
+
+  &__link {
+    margin-top: 79px;
+    padding: 25px;
+    border-radius: 20px;
+    width: 643px;
+    height: 106px;
+    @include title(700, 35px);
+    color: var(--white);
+    background-color: var(--dark-red);
+  }
+}

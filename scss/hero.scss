@@ -1,0 +1,28 @@
+.hero {
+  margin-top: 207px;
+  padding: 100px 0;
+
+  &__container .row {
+    justify-content: center;
+  }
+
+  &__title {
+    gap: 42px;
+    text-transform: uppercase;
+
+    &--1 {
+      font-weight: 800;
+      font-size: 45px;
+      color: var(--black);
+      margin-right: -17px;
+    }
+
+    &--2 {
+      font-weight: 800;
+      font-size: 96px;
+      color: var(--dark-red);
+      display: inline-block;
+      width: auto;
+    }
+  }
+}

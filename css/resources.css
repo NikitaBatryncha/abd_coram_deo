@@ -1,0 +1,34 @@
+.resources {
+  margin-top: 52px;
+  padding: 100px 0;
+}
+.resources__title {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+}
+.resources__descr {
+  margin-top: 28px;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--black);
+  text-align: center;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+}
+.resources__link {
+  margin-top: 79px;
+  padding: 25px;
+  border-radius: 20px;
+  width: 643px;
+  height: 106px;
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark-red);
+}

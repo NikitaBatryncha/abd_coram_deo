@@ -1,0 +1,68 @@
+@import "mixins.scss";
+
+.about {
+  margin-top: 50px;
+  &__title {
+    @include title(700, 35px);
+    margin-left: -15px;
+    margin-bottom: 45px;
+  }
+
+  &__descr {
+    @include text(400, 24px);
+    width: 93%;
+    margin: 0 auto;
+
+    &--2 {
+      margin-top: 90px;
+    }
+  }
+}
+
+.table>:not(caption)>*>* {
+  background-color: transparent;
+}
+
+.table {
+  @include grid_bg(40px);
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  &__column {
+    position: relative;
+    padding: 87px 52px 60px;
+  }
+
+  &__column:first-child::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 90%;
+    background-color: var(--dark-red);
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    @include title(700, 24px);
+    margin-bottom: 45px;
+  }
+
+  &__descr {
+    @include text(400, 23px);
+    background: transparent;
+    margin-bottom: 45px;
+    line-height: 175%;
+
+    span {
+      display: block;
+    }
+
+    &--flex {
+      gap: 43px;
+    }
+  }
+}

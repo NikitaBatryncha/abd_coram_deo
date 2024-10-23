@@ -1,0 +1,65 @@
+@import "mixins.scss";
+
+.calendar {
+  padding: 100px 0;
+  margin-top: 26px;
+
+  &__title {
+    @include title(700, 35px);
+    margin-bottom: 129px;
+  }
+}
+
+.events {
+  border: 6px solid #ac0a08;
+  border-radius: 40px;
+  max-width: 1170px;
+  padding: 73px 72px 103px;
+
+
+  &__number {
+    span:first-child {
+      font-weight: 700;
+      font-size: 96px;
+      color: var(--dark-red);
+      line-height: 87%;
+    }
+
+    span:last-child {
+      @include text(400, 32px);
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+    @include title(700, 29px);
+    line-height: 138%;
+  }
+
+  &__descr {
+    @include text(400, 24px);
+    line-height: 150%;
+    letter-spacing: 0.01em;
+  }
+
+  &__link {
+    margin-top: 39px;
+    padding: 33px;
+    border-radius: 20px;
+    width: 578px;
+    height: 106px;
+    @include title(700, 35px);
+    color: var(--white);
+    background-color: var(--dark-red);
+  }
+}
+
+.text {
+  max-width: 1007px;
+  margin-top: 222px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 123%;
+  letter-spacing: 0.06em;
+  text-align: center;
+}

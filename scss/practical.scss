@@ -1,0 +1,30 @@
+@import "mixins.scss";
+
+.practical {
+  margin-top: 91px;
+
+  &__container {
+    gap: 32px;
+  }
+
+  &__title {
+    max-width: 1103px;
+    @include text(700, 24px);
+    line-height: 167%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 113px;
+  }
+
+  &__descr {
+    @include text(300, 24px);
+    line-height: 167%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+

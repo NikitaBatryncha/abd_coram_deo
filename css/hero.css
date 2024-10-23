@@ -1,0 +1,26 @@
+.hero {
+  margin-top: 207px;
+  padding: 100px 0;
+}
+.hero__container .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero__title {
+  gap: 42px;
+  text-transform: uppercase;
+}
+.hero__title--1 {
+  font-weight: 800;
+  font-size: 45px;
+  color: var(--black);
+  margin-right: -17px;
+}
+.hero__title--2 {
+  font-weight: 800;
+  font-size: 96px;
+  color: var(--dark-red);
+  display: inline-block;
+  width: auto;
+}

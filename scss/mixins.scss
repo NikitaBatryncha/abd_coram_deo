@@ -1,0 +1,51 @@
+@mixin title ($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+  color:  var(--black);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin text ($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+  color:  var(--black);
+  text-align: center;
+  line-height: 167%;
+  letter-spacing: 0.02em;
+}
+
+@mixin grid_bg($mt) {
+  border-radius: 40px;
+  max-width: 1170px;
+  background-color: var(--header-bg);
+  margin: 0 auto;
+  margin-top: $mt;
+}
+
+@mixin grid_title($bg) {
+  border-radius: 20px;
+  width: 279px;
+  height: 75px;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--white);
+  background: $bg;
+  text-align: center;
+  padding: 15px;
+}
+
+@mixin grid_item_after($img) {
+  content: "";
+  border-radius: 100%;
+  width: 238px;
+  height: 238px;
+  position: absolute;
+  bottom: -119px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  background-image: url($img);
+  background-repeat: no-repeat;
+  background-position: center 56px;
+}
