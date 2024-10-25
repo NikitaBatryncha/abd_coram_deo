@@ -55,11 +55,155 @@
 }
 
 .text {
-  max-width: 1007px;
+  width: 90%;
   margin-top: 222px;
   font-weight: 700;
   font-size: 48px;
   line-height: 123%;
   letter-spacing: 0.06em;
   text-align: center;
+}
+
+
+@media (max-width: 1200px) {  
+  .events{
+    &__descr {
+      font-size: 22px;
+    }
+    &__title{
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+  }
+  .text {
+    margin-top: 200px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .events{
+  padding: 53px 52px 73px;
+    &__descr {
+      font-size: 18px;
+    }
+    &__title{
+      font-size: 25px;
+    }
+    &__link {
+      width: 65%;
+      height: 90px;
+      font-size: 25px;
+    }
+  }
+  .calendar__title{
+    font-size: 30px;
+  }
+  .text {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .events{
+    padding: 53px 52px 73px;
+      &__descr {
+        font-size: 18px;
+      }
+      &__title{
+        font-size: 24px;
+      }
+      &__link {
+        height: 80px;
+        font-size: 22px;
+      }
+      &__number {
+        span:first-child {
+          font-size: 80px;
+        }
+    
+        span:last-child {
+          font-size: 28px;
+        }
+      }  
+    }  
+    .calendar__title{
+      font-size: 24px;
+    }
+    .text {
+      font-size: 28px;
+    }
+}
+
+@media (max-width: 720px) {
+  .events{
+    padding: 33px 32px 53px;
+      &__descr {
+        font-size: 17px;
+      }
+      &__link {
+        padding: 30px;
+        height: 70px;
+        width: 70%;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      &__title{
+        font-size: 20px;
+      }
+    }
+    .text {
+      font-size: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+  .events{
+    padding: 33px 32px 53px;
+      &__descr {
+        font-size: 16px;
+      }
+      &__link {
+        font-size: 18px;
+      }
+      &__title{
+        font-size: 18px;
+      }
+      &__number {
+        span:first-child {
+          font-size: 67px;
+        }
+    
+        span:last-child {
+          font-size: 24px;
+        }
+      } 
+    }
+    .text {
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 520px) {
+  .events{
+    padding: 33px 32px 53px;
+      &__link {
+        padding: 27px;
+        height: 60px;
+        font-size: 16px;
+        width: 85%;
+      }
+      &__title{
+        font-size: 18px;
+      }
+      &__number {
+        span:first-child {
+          font-size: 67px;
+        }
+    
+        span:last-child {
+          font-size: 24px;
+        }
+      } 
+    }
 }
