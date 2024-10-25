@@ -44,7 +44,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-  }
+  }  
 
   &__title {
     @include title(700, 24px);
@@ -63,6 +63,105 @@
 
     &--flex {
       gap: 43px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about__title {
+    font-size: 35px; 
+  }
+
+  .about__descr {
+    font-size: 22px;
+  }
+
+  .table__column {
+    padding: 60px 30px 40px; 
+  }
+
+  .table__descr {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table__title{
+    margin-bottom: 20px;
+  }
+
+  .table__column {
+    width: 95%;
+    margin: 0 auto; 
+    padding: 40px 30px;
+  }
+
+  .table__column:first-child::after {
+    position: absolute;
+    height: 3px;
+    width: 90%;
+    bottom: 0px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+  }
+  
+  .about__descr {
+    font-size: 19px;
+  }
+
+  .about__title{
+    font-size: 30px;
+  }
+
+  .table__descr {
+    font-size: 19px;
+    line-height: 160%;
+    margin-bottom: 20px;
+    &--flex{
+      gap: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .about__descr {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .table__column {
+    padding: 30px 15px 20px;
+  }
+
+  .table__descr {
+    line-height: 150%;
+    font-size: 18px;
+  }
+}
+
+// Адаптивные стили для экрана до 576px
+@media (max-width: 576px) {
+
+  .table {
+    &__column {
+      margin: 0 auto 20px; 
+      padding: 20px 10px;
+    }
+
+    img{
+      width: 100px;
     }
   }
 }

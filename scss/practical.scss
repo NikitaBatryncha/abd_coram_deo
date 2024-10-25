@@ -27,4 +27,40 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .practical{
+    &__title, &__descr{
+      width: 93%;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .practical{
+    &__title, &__descr{
+      font-size: 20px;
+    }
+    &__img{
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .practical{
+    &__title, &__descr{
+      font-size: 19px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .practical{
+    &__img{
+      width: 90px;
+    }
+  }
+}
+
 

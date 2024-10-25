@@ -17,12 +17,10 @@
   .grid {
     margin-top: 53px;
     padding-left: 0;
-    gap: 56px;
     row-gap: 74px;
-    justify-content: center;
+    justify-content: space-between;
 
     &__item {
-      max-width: 524px;
       padding-bottom: 119px;
 
       &-container {
@@ -103,9 +101,79 @@
       position: relative;
       z-index: 1;
     }
-
-
   }
+}
 
+@media (max-width: 1200px) {
+  .structure{
+    &__descr{
+      font-size: 22px;
+    }
+    
+    .grid{
+      row-gap: 60px;
+      margin-top: 40px;
+    }
 
+    .grid__descr{
+      font-size: 22px;
+    }
+
+    .grid__item .grid__title{
+      font-size: 38px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .structure{
+    &__title{
+      font-size: 30px;
+    }
+
+    &__descr{
+      font-size: 20px;
+    }
+    
+    .grid{
+      row-gap: 45px;
+      margin-top: 40px;
+    }
+
+    .grid__descr{
+      font-size: 18px;
+    }
+
+    .grid__item .grid__title{
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .structure{
+    &__title{
+      font-size: 24px;
+    }
+
+    &__descr{
+      font-size: 20px;
+    }
+    
+    .grid{
+      row-gap: 45px;
+      margin-top: 40px;
+      &__item-container{
+        min-height: 420px;
+      }
+    }
+
+    .grid__descr{
+      font-size: 18px;
+    }
+
+    .grid__item .grid__title{
+      font-size: 36px;
+    }
+  }
 }

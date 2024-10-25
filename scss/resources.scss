@@ -24,3 +24,67 @@
     background-color: var(--dark-red);
   }
 }
+
+
+@media (max-width: 1200px) {
+  .resources{
+    &__descr{
+      font-size: 22px;
+      width: 93%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .resources{
+    margin-top: 0px;
+    &__title{
+      font-size: 30px;
+    }
+
+    &__descr{
+      font-size: 20px;
+    }
+
+    &__link{
+      width: 70%;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .resources{
+    &__title{
+      font-size: 24px;
+    }
+
+    &__descr{
+      font-size: 18px;
+    }
+
+    &__link{
+      width: 70%;
+      height: 80px;
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .resources{
+    &__title{
+      font-size: 24px;
+    }
+
+    &__descr{
+      font-size: 18px;
+    }
+
+    &__link{
+      width: 70%;
+      height: 80px;
+      font-size: 20px;
+    }
+  }
+}
